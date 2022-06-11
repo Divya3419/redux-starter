@@ -27,9 +27,8 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    
-    dispatch(loginApi(loginCreds))
+ dispatch(loginApi(loginCreds))
+  }
 
   useEffect(() => {
     if (isAuth) {
