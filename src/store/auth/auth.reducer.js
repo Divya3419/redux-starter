@@ -1,3 +1,4 @@
+
 import { LOGIN_ERROR, LOGIN_LOADING, LOGIN_SUCCESS, LOGOUT } from "./auth.types"
 
 let token=localStorage.getItem("token")
@@ -35,3 +36,4 @@ return {...state,loading:true,error:false,isAuth:true,token:payload.token}
         }
     }
 }
+

@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { useNavigate,useLocation } from "react-router-dom";
 
@@ -5,6 +6,7 @@ import {useDispatch,useSelector} from "react-redux"
 
 import {loginApi} from "../store/auth/auth.action"
 const Login = () => {
+
   const dispatch=useDispatch();
   const location = useLocation()
   const navigate = useNavigate();
@@ -25,17 +27,15 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO
+
     
     dispatch(loginApi(loginCreds))
-  };
 
   useEffect(() => {
     if (isAuth) {
       navigate(location.state.pathname || "/", { replace: true });
     }
   }, [navigate, isAuth]);
-
   return (
     <div>
       Login

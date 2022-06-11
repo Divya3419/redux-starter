@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useDispatch,useSelector } from "react-redux";
@@ -16,10 +17,13 @@ const Home = () => {
   }, [dispatch]);
 
 
+
+
   return (
     <div>
       <h1>Home</h1>
       <br />
+
       {getFeed.loading && <h1>LOADING....</h1>}
       {getFeed.error && <h1>ERROR....</h1>}
 

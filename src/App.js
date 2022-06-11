@@ -10,11 +10,17 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={
-        <RequiredAuth>
-        <Home />
-        </RequiredAuth>
-        } />
+
+        
+        <Route
+          path="/"
+          element={
+            <RequiredAuth>
+              <Home />
+            </RequiredAuth>
+          }
+        />
+
         <Route path="/login" element={<Login />} />
       </Routes>
     </div>
