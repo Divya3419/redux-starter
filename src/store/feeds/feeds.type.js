@@ -1,0 +1,4 @@
+export const FEEDS_LOADING ="FEEDS_LOADING"
+export const FEEDS_SUCCESS ="FEEDS_SUCCESS"
+export const FEEDS_ERROR ="FEEDS_ERROR"
+
